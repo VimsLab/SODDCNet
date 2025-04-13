@@ -55,7 +55,7 @@ Use the below commands to train both models on the DUTS datasets. Save the **OIC
 ### Training the L Model
 ```bash
 python training.py \
-    --lr 0.001 \
+    --lr 0.0005 \
     --epochs 11 \
     --f_name "DUTSSODDCNetL" \
     --n 4 \
