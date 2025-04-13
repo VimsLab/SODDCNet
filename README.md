@@ -84,3 +84,30 @@ python training.py \
     --model_size 'XL'
 ```
 
+## Inference
+
+We provide an option to generate the saliency map for a single image or multiple images in a folder. The below script displays the generated saliency map. **model_size** can be 'L' or 'XL'.
+```bash
+python inference.py \
+    --mode single \
+    --input_path /path/to/image.jpg \
+    --display \
+    --model_size L
+```
+
+The below script generates a saliency map and saves the result.
+```bash
+python inference.py \
+    --mode single \
+    --input_path /path/to/image.jpg \
+    --model_size L
+```
+The below script generates saliency maps for a folder of images and saves them in the user-specified output directory.
+```bash
+python inference.py \
+    --mode folder \
+    --input_path /path/to/input/folder \
+    --output_dir /path/to/output/folder \
+    --model_size L
+```
+
