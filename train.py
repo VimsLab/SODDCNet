@@ -201,14 +201,14 @@ def train_model(
 
 	if model_size == 'L':
 		# Large Model
-		model = SODDCNet(3, 1, use_contour = True, ssl = False, 
+		model = SODDCNet(3, 1, use_contour = True, 
 			deep_supervision = True, factorw = 8, factorwo = 4, img_res = im_size, dilation_rates = [[1, 1, 1, 1], [1, 1, 1]], 
 			conv_sizes = [[9, 7, 5, 3], [9, 7, 5]], levels = [1, 1], conv_levels = [4, 3]
 		); init_weights(model)
 
 	elif model_size == 'XL':
 		## X-Large Model
-		model = SODDCNetXL(3, 1, use_contour = True, ssl = False, 
+		model = SODDCNetXL(3, 1, use_contour = True, 
 			deep_supervision = True, factorw = 8, factorwo = 4, img_res = im_size, dilation_rates = [[1, 1, 1, 1], [1, 1, 1]], 
 			conv_sizes = [[9, 7, 5, 3], [9, 7, 5]], levels = [1, 1], conv_levels = [4, 3]
 		); init_weights(model)
