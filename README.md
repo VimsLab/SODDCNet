@@ -20,7 +20,7 @@ You can pre-train the model using the following command-line options. The exampl
 ```bash
 python training.py \
     --lr 0.001 \
-    --epochs 21 \
+    --epochs 20 \
     --f_name "OICOCOSODDCNetL" \
     --n 4 \
     --b 16 \
@@ -36,7 +36,7 @@ python training.py \
 ```bash
 python training.py \
     --lr 0.001 \
-    --epochs 21 \
+    --epochs 20 \
     --f_name "OICOCOSODDCNetXL" \
     --n 4 \
     --b 16 \
