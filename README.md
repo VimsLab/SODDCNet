@@ -63,7 +63,8 @@ python training.py \
     --sched 1 \
     --training_scheme "DUTS" \
     --salient_loss_weight 1.0 \
-    --use_pretrained 0 \
+    --use_pretrained 1 \
+    --checkpoint_name "OICOCOSODDCNetL"
     --im_size 384 \
     --model_size 'L'
 ```
@@ -79,7 +80,8 @@ python training.py \
     --sched 1 \
     --training_scheme "DUTS" \
     --salient_loss_weight 1.0 \
-    --use_pretrained 0 \
+    --use_pretrained 1 \
+    --checkpoint_name "OICOCOSODDCNetXL"
     --im_size 384 \
     --model_size 'XL'
 ```
